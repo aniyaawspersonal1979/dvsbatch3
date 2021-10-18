@@ -4,10 +4,11 @@ pipeline {
   agent any 
   stages {
     stage('mystage1') {
-      script {
         steps {
-          println "Welcome to Jenkins automation"
-        }
+          script {
+            println "Welcome to Jenkins automation"
+          }
+        
       }
     }
   }
